@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import "../index.css"; 
 
 export const LoadingScreen = ({onComplete}) => {
     const [text, setText] = useState("");
     const fullText = "Welcome to my portfolio . . .";
 
     useEffect(() => {
+        console.log("LoadingScreen se ha montado");
         let index = 0;
         const interval = setInterval(() => {
             setText(fullText.substring(0, index));
@@ -15,7 +17,7 @@ export const LoadingScreen = ({onComplete}) => {
 
                 setTimeout(() => {
                     onComplete();
-                } ,1000);
+                } ,600);
             }
         }, 100);
         return () => clearInterval(interval);

@@ -18,17 +18,16 @@ const Portfolio = () => {
   
   "Infrastructure & DevOps": [
     "Linux", "Windows", "Active Directory", "Virtualization",
-    "Docker", "Ansible", "AWS S3", "Git", "GitHub", "GitLab"
+    "Docker", "Ansible", "AWS S3", "Git", "GitHub", "GitLab", "KVM/QEMU"
   ].sort(),
   
   "Networking & Protocols": [
-    "TCP/IP", "UDP", "SSH", "FTP", "DNS", "HTTP/S", 
-    "ARP", "DHCP", "ICMP", "Firewalls", "VPNs", "LDAP", "Cisco"
+    "TCP/IP", "UDP", "SSH", "FTP", "DNS", "HTTP/S", "Network Configuration",
+    "ARP", "DHCP", "ICMP", "Firewalls", "VPNs", "LDAP", "Cisco", "Nginx"
   ].sort()
 };
 
   const projects = [
-    // Proyectos activos
     {
       title: "Portfolio Website",
       desc: "Personal portfolio built with React and TailwindCSS featuring dark mode and smooth animations.",
@@ -50,16 +49,15 @@ const Portfolio = () => {
       link: "https://github.com/oOmyLoveOo/SentinelScan",
       status: "Active"
     },
-    // Coming Soon al final
     {
-      title: "Homelab",
-      desc: "",
-      tech: [],
-      link: "https://github.com/oOmyLoveOo/security-audit",
-      status: "Coming Soon"
+      title: "Hybrid Offensive Security Homelab",
+      desc: "A professional-grade simulation environment built on Arch Linux using KVM/QEMU. It features a dual-homed Kali Linux pivot, an isolated corporate network with Active Directory (Windows Server 2022) and Dockerized web vectors, integrated with a physical Raspberry Pi 4 C2 redirector.",
+      tech: ["KVM/QEMU", "Linux", "Active Directory", "Docker", "Nginx", "Bash", "Network Configuration"],
+      link: "https://github.com/oOmyLoveOo/Virtual-Homelab",
+      status: "Active" 
     },
     {
-      title: "Coming Soon",
+      title: "Dotfiles",
       desc: "",
       tech: [],
       link: "#",
@@ -67,7 +65,7 @@ const Portfolio = () => {
     }
   ];
 
-  // ⬅️ CAMBIO: Filtrar con AND (todas las skills seleccionadas deben estar)
+
   const filteredProjects = selectedSkills.length === 0
     ? projects 
     : projects.filter(p => selectedSkills.every(skill => p.tech.includes(skill)));
@@ -139,7 +137,7 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Indicador de skills seleccionadas */}
+        {/* Selected Skills Indicator */}
         {selectedSkills.length > 0 && (
           <div className="mb-4 flex items-center gap-2 flex-wrap">
             <span className="text-sm font-semibold opacity-70">Projects with ALL:</span>

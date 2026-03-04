@@ -51,7 +51,7 @@ const Navbar = () => {
         }
     };
 
-    // Estilos según el tema
+    // Styling based on theme
     const navbarBg = theme === 'dark' ? 'bg-white/5' : 'bg-white/80';
     const linkNormal = theme === 'dark' ? 'text-white' : 'text-blue-500';
     const linkHover = theme === 'dark' ? 'hover:text-green-400' : 'hover:text-black';

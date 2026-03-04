@@ -1,7 +1,7 @@
 const Homepage = () => {
   return (
     <div className="w-full">
-      {/* Sección principal con título */}
+      {/* Principal section and title */}
       <div className="text-center p-10">
         <h1 className="text-4xl font-bold">
           Hi! I'm Wuke. <br/>
@@ -12,7 +12,7 @@ const Homepage = () => {
         </p>
       </div>
       
-      {/* Sección con foto y JSON */}
+      {/* Section with foto and JSON */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-10 max-w-5xl mx-auto">
         
         {/* Foto */}
@@ -20,7 +20,7 @@ const Homepage = () => {
           <img src="/assets/Me.png" alt="Avatar" className="h-70 rounded-full"/>
         </div> 
         
-        {/* JSON con datos */}
+        {/* JSON with data */}
         <div className="flex-1 bg-white/10 dark:bg-zinc-900/50 border border-green-500/30 rounded-lg p-6 font-mono text-sm backdrop-blur-sm">
           <div className="opacity-60">// user data</div>
           <div className="mt-2">

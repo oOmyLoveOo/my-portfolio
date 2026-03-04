@@ -18,7 +18,6 @@ function App() {
           <LoadingScreen onComplete={() => setIsLoaded(true)} />
         </div>
       )}
-      {/* ⬇️ ELIMINA bg-white dark:bg-black text-gray-900 dark:text-teal-100 */}
       <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
         <BrowserRouter>
           <Routes>

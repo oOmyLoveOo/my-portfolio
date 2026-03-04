@@ -33,7 +33,7 @@ const Contact = () => {
 
         {/* LinkedIn Card */}
         <a
-          href="https://www.linkedin.com/in/wuke-zhang-21264133a"
+          href="https://www.linkedin.com/in/wukezhang"
           target="_blank"
           rel="noopener noreferrer"
           className="group bg-white/10 dark:bg-zinc-900/50 border border-gray-400 dark:border-gray-700 rounded-lg p-8 hover:border-blue-500 dark:hover:border-green-500 transition-all duration-300 backdrop-blur-sm hover:scale-105"

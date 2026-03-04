@@ -12,7 +12,7 @@ function Footer() {
           
           {/* LinkedIn */}
           <a 
-            href="https://www.linkedin.com/in/wuke-zhang-21264133a" 
+            href="https://www.linkedin.com/in/wukezhang" 
             target="_blank" 
             rel="noopener noreferrer"
             className="opacity-70 hover:opacity-100 hover:text-blue-500 transition-all duration-300"

@@ -20,12 +20,12 @@ export const ThemeProvider = ({ children }) => {
       root.classList.add('dark');
       root.classList.remove('light');
       root.style.backgroundColor = '#0a0a0a';
-      root.style.color = '#ccfbf1'; // teal claro
+      root.style.color = '#ccfbf1'; 
     } else {
       root.classList.add('light');
       root.classList.remove('dark');
-      root.style.backgroundColor = '#e0f2fe'; // azul clarito (sky-100)
-      root.style.color = '#1e293b'; // gris oscuro (slate-800)
+      root.style.backgroundColor = '#e0f2fe'; 
+      root.style.color = '#1e293b'; 
     }
   }, [theme]);
 

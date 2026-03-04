@@ -4,7 +4,7 @@ const Homepage = () => {
       {/* Principal section and title */}
       <div className="text-center p-10">
         <h1 className="text-4xl font-bold">
-          Hi! I'm Wuke. <br/>
+          {"<Hi! I'm Wuke. />"} <br/>
           <span className="text-4xl font-mono text-green-500">A Red Teaming Enthusiast.</span>
         </h1>
         <p className="mt-10 text-xl opacity-60 italic max-w-2xl mx-auto border-t border-gray-700 dark:border-gray-800 pt-6">

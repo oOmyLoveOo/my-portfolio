@@ -19,7 +19,8 @@ const Portfolio = () => {
   
   "Infrastructure & DevOps": [
     "Linux", "Windows", "Active Directory", "Virtualization",
-    "Docker", "Ansible", "AWS S3", "Git", "GitHub", "GitLab", "KVM/QEMU"
+    "Docker", "Ansible", "AWS S3", "Git", "GitHub", "GitLab", "KVM/QEMU",
+    "Arch Linux", "Hyprland", "GNU Stow", "Wayland"
   ].sort(),
   
   "Networking & Protocols": [
@@ -65,11 +66,11 @@ const Portfolio = () => {
       status: "Active" 
     },
     {
-      title: "Dotfiles",
-      desc: "",
-      tech: [],
-      link: "#",
-      status: "Coming Soon"
+      title: "Arch-Hyprland-Dotfiles",
+      desc: "Personal Arch Linux + Hyprland dotfiles managed with GNU Stow — Hyprland, Waybar, Kitty, Rofi, and dynamic Wallust theming.",
+      tech: ["Arch Linux", "Hyprland", "GNU Stow", "Wayland", "Bash"],
+      link: "https://github.com/oOmyLoveOo/Arch-Hyprland-Dotfiles",
+      status: "Active"
     },
     {
       title: "?",
@@ -146,27 +147,27 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <a href="https://profile.hackthebox.com/profile/019c736e-44ea-719c-9c6e-1b82791de3e3" target="_blank" rel="noopener noreferrer" className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
             <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">HackTheBox</p>
-            <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Level 70</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">HTB Profile</h3>
             <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
-              "Ongoing hands-on practice — machines, challenges and Active Directory tracks."
+              "Level 70 — ongoing hands-on practice: machines, challenges and Active Directory tracks."
             </p>
           </a>
 
-          <div className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
+          <a href="/certificates/WorldSkills-UK-2026-Entry-Stage.pdf" target="_blank" rel="noopener noreferrer" className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
             <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">WorldSkills UK 2026 · Cyber Security</p>
             <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Entry Stage — Passed</h3>
             <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
               "Linux command line, OSINT, network traffic analysis (PCAP/Wireshark), and security theory."
             </p>
-          </div>
+          </a>
 
-          <div className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
+          <a href="https://lnkd.in/p/dx_vTiFF" target="_blank" rel="noopener noreferrer" className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
             <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">Hackathon · Rolls-Royce / Projecting Success</p>
             <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Project:Hack27</h3>
             <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
               "Secured the AI/data pipeline of an automated WBS generator — data sanitization before LLM ingestion and a local, offline LLM deployment to eliminate data leakage risk."
             </p>
-          </div>
+          </a>
         </div>
       </section>
 

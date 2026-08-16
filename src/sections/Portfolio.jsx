@@ -11,9 +11,10 @@ const Portfolio = () => {
   ].sort(),
   
   "Cybersecurity": [
-    "Nmap", "Wireshark", "Metasploit", "Burp Suite", 
-    "OWASP Top 10", "Kali Linux", "Pentesting", 
-    "IDS/IPS", "Ethics & Law", "Technical Reporting"
+    "Nmap", "Wireshark", "Metasploit", "Burp Suite",
+    "OWASP Top 10", "Kali Linux", "Pentesting",
+    "IDS/IPS", "Ethics & Law", "Technical Reporting",
+    "MITRE ATT&CK", "Microsoft Sentinel", "SOAR", "Detection Engineering"
   ].sort(),
   
   "Infrastructure & DevOps": [
@@ -29,6 +30,13 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "AD Purple Team Lab (Dissertation)",
+      desc: "Full purple-team lifecycle in an isolated Active Directory environment: simulated MITRE ATT&CK-aligned attack techniques, engineered detection rules in Microsoft Sentinel (KQL), instrumented endpoint visibility with Sysmon, and automated incident triage via SOAR (Azure Logic Apps + AI).",
+      tech: ["Active Directory", "MITRE ATT&CK", "Microsoft Sentinel", "SOAR", "Detection Engineering"],
+      link: "https://github.com/oOmyLoveOo/AD-Detection-Lab",
+      status: "Active"
+    },
+    {
       title: "Portfolio Website",
       desc: "Personal portfolio built with React and TailwindCSS featuring dark mode and smooth animations.",
       tech: ["React", "TailwindCSS", "JavaScript", "HTML5", "Git"],
@@ -37,7 +45,7 @@ const Portfolio = () => {
     },
     {
       title: "Python-Keylogger",
-      desc: "A disguised keylogger written in Python for educational purposes, capturing keystrokes and sending logs via HTTP/S requests.",
+      desc: "Keylogger and HTTP/S exfiltration channel built as red-team tooling practice, to study endpoint evasion from an attacker's perspective — tested in an isolated homelab.",
       tech: ["Python", "HTTP/S", "Git"],
       link: "https://github.com/oOmyLoveOo/Python-keylogger",
       status: "Active"
@@ -94,27 +102,70 @@ const Portfolio = () => {
           {">"} Professional_Certifications
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
           <a href="https://www.credly.com/badges/0c4ad615-e2fe-4657-be4e-ab2d41d7ec04" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group transition-transform hover:scale-105">
             <div className="bg-white p-6 rounded-xl shadow-lg w-[220px] h-[300px] flex items-center justify-center border-2 border-transparent group-hover:border-blue-500 transition-all">
-              <img src="/assets/badge1.png" alt="Google Cyber" className="w-full h-full object-contain" />
+              <img src="/assets/badge1.png" alt="IT Specialist - Cybersecurity" className="w-full h-full object-contain" />
             </div>
-            <p className="mt-4 font-mono text-sm text-slate-700 dark:text-gray-400 group-hover:text-blue-600 italic">Verify Authenticity</p>
+            <p className="mt-2 font-semibold text-sm text-slate-700 dark:text-gray-300">IT Specialist - Cybersecurity</p>
+            <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 group-hover:text-blue-600 italic">Verify Authenticity</p>
           </a>
 
           <a href="https://www.credly.com/badges/8c9dd136-7394-41e5-9d4c-29121e66491e" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group transition-transform hover:scale-105">
             <div className="bg-white p-6 rounded-xl shadow-lg w-[220px] h-[300px] flex items-center justify-center border-2 border-transparent group-hover:border-blue-500 transition-all">
-              <img src="/assets/badge2.png" alt="Google Cyber 2" className="w-full h-full object-contain" />
+              <img src="/assets/badge2.png" alt="CCST Cybersecurity" className="w-full h-full object-contain" />
             </div>
-            <p className="mt-4 font-mono text-sm text-slate-700 dark:text-gray-400 group-hover:text-blue-600 italic">Verify Authenticity</p>
+            <p className="mt-2 font-semibold text-sm text-slate-700 dark:text-gray-300">CCST Cybersecurity</p>
+            <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 group-hover:text-blue-600 italic">Verify Authenticity</p>
           </a>
 
           <div className="flex flex-col items-center">
             <div className="bg-white/30 dark:bg-zinc-900/30 border-2 border-dashed border-slate-400 dark:border-zinc-700 rounded-xl w-[220px] h-[300px] flex flex-col items-center justify-center group hover:border-green-500/50 transition-all">
-              <span className="text-5xl text-slate-500 dark:text-zinc-600 group-hover:text-green-500 transition-colors mb-4">+</span>
-              <p className="text-center font-mono text-xs text-slate-600 dark:text-zinc-500">Next: eJPT / OSCP</p>
+              <span className="text-3xl text-slate-500 dark:text-zinc-600 group-hover:text-green-500 transition-colors mb-4">⧗</span>
+              <p className="text-center font-mono text-xs text-slate-600 dark:text-zinc-500 px-4">HTB CPTS</p>
             </div>
-            <p className="mt-4 font-mono text-sm text-slate-500 dark:text-gray-500 italic">Roadmap 2026</p>
+            <p className="mt-2 font-semibold text-sm text-slate-700 dark:text-gray-300">Certified Penetration Testing Specialist</p>
+            <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 italic">Exam completed — results pending</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="bg-white/30 dark:bg-zinc-900/30 border-2 border-dashed border-slate-400 dark:border-zinc-700 rounded-xl w-[220px] h-[300px] flex flex-col items-center justify-center group hover:border-green-500/50 transition-all">
+              <span className="text-5xl text-slate-500 dark:text-zinc-600 group-hover:text-green-500 transition-colors mb-4">+</span>
+              <p className="text-center font-mono text-xs text-slate-600 dark:text-zinc-500">Next: CWES / CAPE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION: PRACTICE & COMPETITIONS --- */}
+      <section className="mb-24">
+        <h2 className="text-4xl font-bold text-center mb-12 italic text-blue-700 dark:text-green-500">
+          {">"} Practice_&_Competitions
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a href="https://profile.hackthebox.com/profile/019c736e-44ea-719c-9c6e-1b82791de3e3" target="_blank" rel="noopener noreferrer" className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
+            <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">HackTheBox</p>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Level 70</h3>
+            <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
+              "Ongoing hands-on practice — machines, challenges and Active Directory tracks."
+            </p>
+          </a>
+
+          <div className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
+            <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">WorldSkills UK 2026 · Cyber Security</p>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Entry Stage — Passed</h3>
+            <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
+              "Linux command line, OSINT, network traffic analysis (PCAP/Wireshark), and security theory."
+            </p>
+          </div>
+
+          <div className="bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 p-6 rounded-xl hover:shadow-xl dark:hover:border-green-500/50 transition-all group">
+            <p className="font-mono text-xs text-blue-700 dark:text-green-500 mb-2 uppercase tracking-wider">Hackathon · Rolls-Royce / Projecting Success</p>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-blue-700 dark:group-hover:text-green-400 transition-colors">Project:Hack27</h3>
+            <p className="text-slate-700 dark:text-gray-400 text-sm leading-relaxed italic">
+              "Secured the AI/data pipeline of an automated WBS generator — data sanitization before LLM ingestion and a local, offline LLM deployment to eliminate data leakage risk."
+            </p>
           </div>
         </div>
       </section>

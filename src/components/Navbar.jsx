@@ -127,16 +127,25 @@ const Navbar = () => {
                 </Link>
                 
                 {/* CONTACT */}
-                <Link 
-                    to="/sections/contact" 
+                <Link
+                    to="/sections/contact"
                     className={`${linkHover} transition-all duration-300 w-[85px] sm:w-[120px] text-center py-1 sm:py-2 text-sm sm:text-base rounded-full ${
-                        location.pathname === "/sections/contact" 
+                        location.pathname === "/sections/contact"
                             ? linkActive
                             : linkNormal
                     }`}
                 >
                     Contact
                 </Link>
+
+                {/* BLOG - coming soon, not linked yet */}
+                <span
+                    className={`${linkNormal} opacity-40 cursor-not-allowed transition-all duration-300 w-[85px] sm:w-[120px] text-center py-1 sm:py-2 text-sm sm:text-base rounded-full flex items-center justify-center gap-1`}
+                    title="Coming soon"
+                >
+                    Blog
+                    <span className="text-[9px] align-top">soon</span>
+                </span>
             </div>
 
             {/* Theme Toggle - Right */}

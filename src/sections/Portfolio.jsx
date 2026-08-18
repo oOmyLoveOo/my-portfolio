@@ -120,14 +120,13 @@ const Portfolio = () => {
             <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 group-hover:text-blue-600 italic">Verify Authenticity</p>
           </a>
 
-          <div className="flex flex-col items-center">
-            <div className="bg-white/30 dark:bg-zinc-900/30 border-2 border-dashed border-slate-400 dark:border-zinc-700 rounded-xl w-[220px] h-[300px] flex flex-col items-center justify-center group hover:border-green-500/50 transition-all">
-              <span className="text-3xl text-slate-500 dark:text-zinc-600 group-hover:text-green-500 transition-colors mb-4">⧗</span>
-              <p className="text-center font-mono text-xs text-slate-600 dark:text-zinc-500 px-4">HTB CPTS</p>
+          <a href="https://www.credly.com/badges/db6debe5-78da-4378-832d-e6ee6cec6d2a/public_url" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group transition-transform hover:scale-105">
+            <div className="bg-white p-6 rounded-xl shadow-lg w-[220px] h-[300px] flex items-center justify-center border-2 border-transparent group-hover:border-blue-500 transition-all">
+              <img src="/assets/badge3.png" alt="HTB Certified Penetration Testing Specialist (CPTS)" className="w-full h-full object-contain" />
             </div>
-            <p className="mt-2 font-semibold text-sm text-slate-700 dark:text-gray-300">Certified Penetration Testing Specialist</p>
-            <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 italic">Exam completed — results pending</p>
-          </div>
+            <p className="mt-2 font-semibold text-sm text-slate-700 dark:text-gray-300">CPTS — Certified Penetration Testing Specialist</p>
+            <p className="mt-1 font-mono text-xs text-slate-500 dark:text-gray-500 group-hover:text-blue-600 italic">Verify Authenticity</p>
+          </a>
 
           <div className="flex flex-col items-center">
             <div className="bg-white/30 dark:bg-zinc-900/30 border-2 border-dashed border-slate-400 dark:border-zinc-700 rounded-xl w-[220px] h-[300px] flex flex-col items-center justify-center group hover:border-green-500/50 transition-all">
